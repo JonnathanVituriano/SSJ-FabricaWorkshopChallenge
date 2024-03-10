@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalhes do Pokemon</title>
+</head>
+<body>
+    <h1>Buscar Detalhes do Pokemon</h1>
+    <form action="{% url 'pokemon_detalhes' %}" method="post">
+        {% csrf_token %}
+        <label for="nome_pokemon">Nome do Pokemon:</label>
+        <input type="text" id="nome_pokemon" name="nome_pokemon">
+        <input type="submit" value="Buscar">
+    </form>
+</body>
+</html>
